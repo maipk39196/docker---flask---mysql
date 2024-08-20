@@ -7,6 +7,13 @@ CREATE TABLE users (
     age int (100) not null,
     PRIMARY KEY (uid)
 );
+INSERT INTO users (uid, name, age) VALUES
+(121, 'Alice', 18),
+(122, 'Bob', 17),
+(123, 'Cindy', 25),
+(124, 'Dan', 21);
 
-INSERT INTO USERS(name, age)
+
+INSERT INTO users(name, age)
 VALUES("Dunk", "22"), ("Just_test","18");
+

@@ -1,2 +1,5 @@
 FROM mysql:latest
+
+RUN chown -R mysql:root /var/lib/mysql/
 COPY ./db-dev.sql/ /docker-entrypoint-initdb.d/
+EXPOSE 3306
