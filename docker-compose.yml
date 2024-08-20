@@ -1,8 +1,7 @@
-version: '3'
 services:
   api-dev:
     container_name: api-dev
-    image: sdpx/api
+    image: spdx/api
     ports:
       - 8081:5000
     environment:
@@ -15,7 +14,7 @@ services:
 
   api-test:
     container_name: api-test
-    image: sdpx/api
+    image: spdx/api
     ports:
       - 8082:5000
     environment:
@@ -28,7 +27,7 @@ services:
 
   db-dev:
     container_name: db-dev
-    image: sdpx/db
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db-dev
@@ -39,7 +38,7 @@ services:
 
   db-test:
     container_name: db-test
-    image: sdpx/db
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db-test
