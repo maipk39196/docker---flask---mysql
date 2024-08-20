@@ -100,6 +100,7 @@ volumes:
 ```
 Build container command :
 ```
+cd ..
 docker-compose up -d --build
 ```
 ## **Step 4 Setup Database**
