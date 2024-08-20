@@ -23,8 +23,10 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
 ```
-build image command with image name : ตรวจสอบให้แน่ใจว่าอยู่ใน path ที่มี dockerfile
-
+build image command with image name : ตรวจสอบให้แน่ใจว่าอยู่ใน path ที่มี dockerfile  
+```
+docker build -t sdpx/api .
+```
 #### dockerfile - sdpx/db
 ```
 FROM mysql:latest
@@ -138,4 +140,3 @@ Import File POSTMAN : Flask API MySQL.postman_collection.json
 
 PUT : http://localhost:<port>/user/new  
 DELETE : http://localhost:<port>/user/121
-=======
