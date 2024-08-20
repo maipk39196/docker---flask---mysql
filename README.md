@@ -146,7 +146,7 @@ INSERT INTO users (name, age) VALUES
 ('Deef', 18),
 ('Mile', 17),
 ('Dunk', 25),
-('Mew', 21);
+('Mew', 21),
 ('First', 21);
 ```
 หากต้องหารสร้าง DB เพิ่มอีกใช้คำสั่ง
