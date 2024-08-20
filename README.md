@@ -118,7 +118,7 @@ USE <database>;
 
 SHOW TABLES;
 ```
-สร้างตารางและข้อมูล
+สร้างตารางและข้อมูล สำหรับ test
 ```
 CREATE TABLE users (
     uid int not null AUTO_INCREMENT,
@@ -132,6 +132,22 @@ INSERT INTO users (uid, name, age) VALUES
 (122, 'Bob', 17),
 (123, 'Cindy', 25),
 (124, 'Dan', 21);
+```
+สร้างตารางและข้อมูล สำหรับ dev
+```
+CREATE TABLE users (
+    uid int not null AUTO_INCREMENT,
+    name varchar(100) not null,
+    age int (100) not null,
+    PRIMARY KEY (uid)
+);
+
+INSERT INTO users (name, age) VALUES
+('Deef', 18),
+('Mile', 17),
+('Dunk', 25),
+('Mew', 21);
+('First', 21);
 ```
 หากต้องหารสร้าง DB เพิ่มอีกใช้คำสั่ง
 ```
