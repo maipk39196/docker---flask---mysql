@@ -9,4 +9,4 @@ CREATE TABLE users (
 );
 
 INSERT INTO users(name, age)
-VALUES("Dunk", "22"), ("Just_test","18");
+VALUES("mile", "22"), ("deef","18");
