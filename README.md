@@ -101,7 +101,7 @@ volumes:
 Build container command :
 ```
 cd ..
-docker-compose up -d --build
+docker-compose up -d
 ```
 ## **Step 4 Setup Database**
 เข้า bash เพื่อใช้ command sql
