@@ -25,6 +25,7 @@ CMD ["flask", "run"]
 ```
 build image command with image name : ตรวจสอบให้แน่ใจว่าอยู่ใน path ที่มี dockerfile  
 ```
+cd app
 docker build -t sdpx/api .
 ```
 #### dockerfile - sdpx/db
@@ -36,6 +37,8 @@ COPY ./db.sql/ /docker-entrypoint-initdb.d/
 ```
 build image command with image name : ตรวจสอบให้แน่ใจว่าอยู่ใน path ที่มี dockerfile
 ```
+cd ..
+cd db
 docker build -t sdpx/db .
 ```
 **Build Image Finished**
