@@ -133,6 +133,11 @@ INSERT INTO users (uid, name, age) VALUES
 (123, 'Cindy', 25),
 (124, 'Dan', 21);
 ```
+หากต้องหารสร้าง DB เพิ่มอีกใช้คำสั่ง
+```
+exit
+exit
+```
 
 ## **Step 5 Test**
 ทดสอบเข้า http://localhost:8081 และ http://localhost:8082 เพื่อทดสอบการทำ API  
